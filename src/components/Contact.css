@@ -262,11 +262,13 @@
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 0.5rem;
+  color: #1B5137;
 }
 
 .cta-stat .stat-label {
   font-size: 0.9rem;
-  opacity: 0.9;
+  color: var(--color-success);
+  opacity: 0.95;
 }
 
 /* Responsive design */

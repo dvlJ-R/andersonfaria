@@ -3,6 +3,10 @@
   background: var(--white);
 }
 
+.blog .section-title {
+  color: var(--color-primary);
+}
+
 .blog-filter {
   display: flex;
   justify-content: center;
