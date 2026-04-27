@@ -4,58 +4,49 @@ import './Blog.css';
 const Blog = () => {
   const blogPosts = [
     {
-      title: 'Como Configurar Testes com Cypress: Guia Completo',
-      excerpt: 'Aprenda a configurar e implementar testes end-to-end com Cypress, desde a instalação até a criação de testes complexos com boas práticas.',
-      date: '2024-01-15',
-      readTime: '8 min',
-      category: 'Tutorial',
-      tags: ['Cypress', 'E2E Testing', 'JavaScript'],
-      image: '🔧'
+      title: 'Playwright com TypeScript: como estruturar um projeto E2E profissional',
+      excerpt: 'Guia prático para configurar um projeto Playwright + TypeScript com boas práticas, Page Objects e execução cross-browser.',
+      date: '2024-04-10',
+      readTime: '9 min',
+      category: 'Playwright',
+      tags: ['Playwright', 'TypeScript', 'E2E'],
+      image: '🎭'
     },
     {
-      title: 'Selenium vs Cypress: Qual Escolher em 2024?',
-      excerpt: 'Comparação detalhada entre Selenium e Cypress, analisando prós, contras, performance e casos de uso ideais para cada ferramenta.',
-      date: '2024-01-10',
-      readTime: '12 min',
+      title: 'Cypress vs Playwright: quando usar cada ferramenta',
+      excerpt: 'Análise prática das diferenças entre Cypress e Playwright, com foco em casos de uso e estabilidade de testes.',
+      date: '2024-03-22',
+      readTime: '10 min',
       category: 'Comparação',
-      tags: ['Selenium', 'Cypress', 'Automação'],
+      tags: ['Cypress', 'Playwright', 'Automação'],
       image: '⚖️'
     },
     {
-      title: 'Estratégias de Teste de API com Postman',
-      excerpt: 'Técnicas avançadas para testes de API usando Postman, incluindo automação, validação de dados e integração com CI/CD.',
-      date: '2024-01-05',
-      readTime: '10 min',
-      category: 'API Testing',
-      tags: ['Postman', 'API', 'Automação'],
-      image: '📡'
-    },
-    {
-      title: 'Construindo Pipelines de QA com GitLab CI/CD',
-      excerpt: 'Como implementar pipelines eficientes de QA usando GitLab CI/CD, incluindo testes automatizados, relatórios e deploy contínuo.',
-      date: '2023-12-28',
-      readTime: '15 min',
-      category: 'DevOps',
-      tags: ['GitLab', 'CI/CD', 'Pipeline'],
-      image: '🚀'
-    },
-    {
-      title: 'Test Pyramid: Estratégia para Testes Eficientes',
-      excerpt: 'Entenda a pirâmide de testes e como aplicar essa estratégia para criar uma suíte de testes balanceada e eficiente.',
-      date: '2023-12-20',
-      readTime: '7 min',
+      title: 'Page Objects em automação de testes: quando ajudam e quando atrapalham',
+      excerpt: 'Entenda os benefícios e os limites do padrão Page Object em projetos de automação de testes.',
+      date: '2024-03-05',
+      readTime: '8 min',
       category: 'Estratégia',
-      tags: ['Test Strategy', 'Best Practices', 'QA'],
-      image: '🔺'
+      tags: ['Page Objects', 'Design', 'QA'],
+      image: '🧩'
     },
     {
-      title: 'IA na Automação de Testes: O Futuro do QA',
-      excerpt: 'Explore como a Inteligência Artificial está transformando a automação de testes e o que esperar do futuro do QA.',
-      date: '2023-12-15',
+      title: 'Como integrar testes Playwright em GitHub Actions',
+      excerpt: 'Passo a passo para executar suites Playwright em GitHub Actions com relatórios e execução contínua.',
+      date: '2024-02-18',
       readTime: '11 min',
-      category: 'Tendências',
-      tags: ['AI', 'Machine Learning', 'Future'],
-      image: '🤖'
+      category: 'DevOps',
+      tags: ['GitHub Actions', 'CI/CD', 'Playwright'],
+      image: '⚙️'
+    },
+    {
+      title: 'Boas práticas para testes E2E estáveis',
+      excerpt: 'Principais práticas para manter uma suíte E2E confiável, resiliente e de fácil manutenção.',
+      date: '2024-02-05',
+      readTime: '8 min',
+      category: 'Best Practices',
+      tags: ['E2E Testing', 'Estabilidade', 'Maintenance'],
+      image: '✅'
     }
   ];
 

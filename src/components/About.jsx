@@ -34,15 +34,25 @@ const About = () => {
               atuando desde QA Júnior até posições estratégicas em projetos federais de alto impacto.
             </p>
             <p className="about-description">
-              Especialista em automação com Cypress, testes de API com Postman, metodologias ágeis (Scrum/Kanban) 
-              e reestruturação de processos de QA do zero. Possuo experiência também como Product Manager, 
-              fortalecendo minha visão de produto, priorização e entrega de valor.
-            </p>
-            <p className="about-description">
-              Possuo perfil analítico, comunicativo e orientado à excelência técnica. Tenho vivência internacional 
-              com imersão em inglês na Holanda, e busco constantemente alinhar qualidade de software aos objetivos 
-              reais do negócio.
-            </p>
+Especialista em automação com Cypress, Playwright + TypeScript e Selenium, testes de API com Postman,
+            metodologias ágeis (Scrum/Kanban) e reestruturação de processos de QA do zero. Possuo experiência também como Product Manager,
+            fortalecendo minha visão de produto, priorização e entrega de valor.
+          </p>
+          <p className="about-description">
+            Possuo perfil analítico, comunicativo e orientado à excelência técnica. Tenho vivência internacional
+            com imersão em inglês na Holanda, e busco constantemente alinhar qualidade de software aos objetivos
+            reais do negócio.
+          </p>
+
+          <div className="about-highlights">
+            <h3>Diferenciais Profissionais</h3>
+            <ul>
+              <li>Desenvolvimento atual de automações E2E com Playwright + TypeScript.</li>
+              <li>Organização de projetos de teste com Page Objects, fixtures e suítes por contexto.</li>
+              <li>Experiência prática com execução cross-browser e relatórios de testes.</li>
+              <li>Foco em automação moderna com estabilidade, manutenção e valor para o time.</li>
+            </ul>
+          </div>
           </div>
 
           <div className="about-image">

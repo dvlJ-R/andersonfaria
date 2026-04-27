@@ -231,6 +231,20 @@
   font-size: 0.9rem;
 }
 
+.metric-note {
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.metrics-subtitle {
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 1rem auto 2rem;
+  max-width: 720px;
+  font-size: 1rem;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .insights-grid {

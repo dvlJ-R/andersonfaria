@@ -10,6 +10,12 @@ const Technologies = () => {
       icon: '🔧'
     },
     {
+      name: 'Playwright + TypeScript',
+      description: 'Automação E2E com foco em estrutura, manutenção e execução cross-browser',
+      category: 'Testing',
+      icon: '🎭'
+    },
+    {
       name: 'Selenium',
       description: 'Automação de navegadores web',
       category: 'Testing',
@@ -28,10 +34,22 @@ const Technologies = () => {
       icon: '🚀'
     },
     {
+      name: 'GitHub Actions',
+      description: 'Automação de pipeline e integração de testes',
+      category: 'DevOps',
+      icon: '⚙️'
+    },
+    {
       name: 'Jira',
       description: 'Gestão de projetos e rastreamento de issues',
       category: 'Management',
       icon: '📋'
+    },
+    {
+      name: 'Confluence',
+      description: 'Documentação e padronização de processos',
+      category: 'Management',
+      icon: '🧾'
     },
     {
       name: 'JavaScript',

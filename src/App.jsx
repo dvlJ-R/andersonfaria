@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Services from './components/Services';
 import About from './components/About';
 import Technologies from './components/Technologies';
 import MarketInsights from './components/MarketInsights';
@@ -13,11 +13,11 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
       <div className="App">
         <Navbar />
         <main>
           <Hero />
+          <Services />
           <About />
           <Technologies />
           <MarketInsights />
@@ -27,7 +27,6 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
   );
 }
 

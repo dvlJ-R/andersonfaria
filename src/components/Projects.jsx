@@ -4,6 +4,19 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
+      title: 'Playwright + TypeScript — Automação E2E moderna',
+      description: 'Desenvolvimento de um projeto de automação E2E com Playwright e TypeScript, aplicando boas práticas como Page Objects, fixtures, organização por suítes, dados de teste, execução cross-browser, relatórios HTML e integração com GitHub Actions.',
+      technologies: ['Playwright', 'TypeScript', 'Page Objects', 'GitHub Actions', 'CI/CD'],
+      outcomes: [
+        'Estruturação de automação E2E robusta',
+        'Uso de fixtures e dados bem organizados',
+        'Integração com pipeline de GitHub Actions'
+      ],
+      category: 'Automação',
+      status: 'Em Andamento',
+      image: '🧪'
+    },
+    {
       title: 'GeoRadar - Ministério Público Federal',
       description: 'Sistema federal de monitoramento geoespacial para combate ao desmatamento e crimes ambientais. Responsável pela reestruturação completa dos processos de QA.',
       technologies: ['Cypress', 'Postman', 'GitLab CI/CD', 'ReactJS', 'Django'],

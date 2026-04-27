@@ -16,41 +16,70 @@ const Hero = () => {
       
       <div className="container">
         <div className={`hero-content ${isVisible ? 'animate-fadeInUp' : ''}`}>
-          <h1 className="hero-title">
-            Anderson Faria
-          </h1>
-          <h2 className="hero-subtitle">
-            QA Engineer | Estratégico | Profissional
-          </h2>
-          <p className="hero-tagline">
-            Delivering Quality Through Innovation
-          </p>
-          <p className="hero-description">
-            Especialista em automação de testes com Cypress, testes de API com Postman, 
-            e metodologias ágeis. Transformando qualidade de software em resultados de negócio.
-          </p>
-          
-          <div className="hero-actions">
-            <a href="#projects" className="btn btn-primary">
-              Ver Projetos
-            </a>
-            <a href="#contact" className="btn btn-accent">
-              Entre em Contato
-            </a>
+          <div className="hero-copy">
+            <p className="hero-eyebrow">Estratégia · Qualidade · Resultados</p>
+            <h1 className="hero-title">Qualidade de Software com visão estratégica</h1>
+            <p className="hero-tagline">
+              Transformo qualidade em valor de negócio por meio de testes manuais, automação com Cypress e Playwright + TypeScript,
+              validação de APIs, documentação clara, melhoria de processos e colaboração com times técnicos e de produto.
+            </p>
+            <p className="hero-description">
+              QA Engineer estratégico com experiência em automação moderna, redução de incertezas e entrega de soluções confiáveis para projetos críticos.
+            </p>
+
+            <div className="hero-actions">
+              <a href="#projects" className="btn btn-primary">
+                Ver Portfólio
+              </a>
+              <a href="#contact" className="btn btn-accent">
+                Falar Comigo
+              </a>
+            </div>
+
+            <div className="hero-highlights">
+              <div className="highlight-card">
+                <span>Foco em risco e valor</span>
+              </div>
+              <div className="highlight-card">
+                <span>Processos orientados a dados</span>
+              </div>
+              <div className="highlight-card">
+                <span>Entregas com qualidade e confiança</span>
+              </div>
+            </div>
           </div>
 
-          <div className="hero-stats">
-            <div className="stat">
-              <span className="stat-number">3+</span>
-              <span className="stat-label">Anos de Experiência</span>
+          <div className="hero-panel">
+            <div className="panel-card panel-primary">
+              <div className="panel-title">Visão geral de qualidade</div>
+              <div className="panel-grid">
+                <div className="panel-item">
+                  <span>Testes planejados</span>
+                  <strong>1248</strong>
+                </div>
+                <div className="panel-item">
+                  <span>Defeitos encontrados</span>
+                  <strong>32</strong>
+                </div>
+                <div className="panel-item">
+                  <span>Indicadores de aprovação</span>
+                  <strong>Modelo de processo</strong>
+                </div>
+                <div className="panel-item">
+                  <span>Cobertura de testes</span>
+                  <strong>Visão de qualidade</strong>
+                </div>
+              </div>
             </div>
-            <div className="stat">
-              <span className="stat-number">50+</span>
-              <span className="stat-label">Projetos Testados</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">10+</span>
-              <span className="stat-label">Ferramentas Dominadas</span>
+
+            <div className="panel-card panel-secondary">
+              <div className="panel-title">Pipeline de qualidade</div>
+              <ul className="pipeline-list">
+                <li>Planejamento de testes</li>
+                <li>Execução</li>
+                <li>Análise de resultados</li>
+                <li>Relatórios e insights</li>
+              </ul>
             </div>
           </div>
         </div>

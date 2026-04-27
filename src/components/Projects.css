@@ -93,6 +93,11 @@
   color: #1E40AF;
 }
 
+.project-status.em-andamento {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
 .project-category {
   background: var(--color-accent);
   color: var(--white);

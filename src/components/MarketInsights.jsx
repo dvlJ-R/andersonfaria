@@ -98,38 +98,43 @@ const MarketInsights = () => {
         </div>
 
         <div className="qa-metrics">
-          <h3 className="metrics-title">Métricas Importantes em QA</h3>
+          <h3 className="metrics-title">Exemplo Visual de Indicadores</h3>
+          <p className="metrics-subtitle">Modelo de acompanhamento para visão de qualidade e estabilidade de processos.</p>
           <div className="metrics-container">
             <div className="metric-item">
               <div className="metric-circle">
                 <span className="metric-value">99.5%</span>
               </div>
-              <h4>Test Coverage</h4>
-              <p>Cobertura de testes automatizados</p>
+              <h4>Coverage</h4>
+              <p>Indicador de cobertura de testes automatizados</p>
+              <p className="metric-note">Exemplo visual de painel</p>
             </div>
-            
+
             <div className="metric-item">
               <div className="metric-circle">
                 <span className="metric-value">&lt; 2min</span>
               </div>
-              <h4>Build Time</h4>
-              <p>Tempo médio de execução dos testes</p>
+              <h4>Tempo de Execução</h4>
+              <p>Indicador de rapidez de validação de pipelines</p>
+              <p className="metric-note">Modelo de acompanhamento</p>
             </div>
-            
+
             <div className="metric-item">
               <div className="metric-circle">
                 <span className="metric-value">0.1%</span>
               </div>
               <h4>Defect Rate</h4>
-              <p>Taxa de defeitos em produção</p>
+              <p>Indicador de qualidade do software em produção</p>
+              <p className="metric-note">Visão de processo</p>
             </div>
-            
+
             <div className="metric-item">
               <div className="metric-circle">
                 <span className="metric-value">24h</span>
               </div>
               <h4>MTTR</h4>
-              <p>Tempo médio para resolução</p>
+              <p>Indicador de tempo de resolução de incidentes</p>
+              <p className="metric-note">Painel de referência</p>
             </div>
           </div>
         </div>

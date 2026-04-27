@@ -50,7 +50,7 @@ const Footer = () => {
               <h3>Anderson Faria</h3>
               <p className="footer-tagline">QA Engineer | Estratégico | Profissional</p>
               <p className="footer-description">
-                Especialista em automação de testes e qualidade de software, 
+                Especialista em automação de testes com Cypress, Selenium e Playwright + TypeScript,
                 com foco em entregar excelência técnica e resultados de negócio.
               </p>
             </div>
@@ -120,8 +120,7 @@ const Footer = () => {
             </p>
             <div className="footer-quote">
               <p>
-                "I am the way and the truth and the life. No one comes to the Father except through me" 
-                <span className="quote-reference">(John 14:6)</span>
+                "Qualidade de software nasce da união entre automação, processo e foco em valor." 
               </p>
             </div>
           </div>
