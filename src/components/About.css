@@ -3,6 +3,10 @@
   padding: 100px 0;
 }
 
+.about .section-title {
+  color: var(--color-primary);
+}
+
 .about-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -206,7 +210,7 @@
 .timeline-company {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--text-primary);
+  color: var(--color-accent);
   margin-bottom: 1rem;
 }
 
