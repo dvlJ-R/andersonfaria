@@ -24,7 +24,7 @@
 
 .about-description {
   font-size: 1.1rem;
-  color: var(--text-secondary);
+  color: #47524d;
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
@@ -49,24 +49,27 @@
 .about-highlights li {
   position: relative;
   padding-left: 1.6rem;
-  color: var(--text-secondary);
+  color: #47524d;
   line-height: 1.75;
 }
 
 .about-highlights li::before {
-  content: '•';
+  content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  color: var(--color-accent);
-  font-size: 1.25rem;
-  line-height: 1;
+  top: 0.75rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
 }
 
 .about-image {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .image-placeholder {
@@ -99,6 +102,34 @@
   height: 200%;
   background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
   animation: shimmer 3s infinite;
+}
+
+.about-facts-card {
+  width: min(100%, 360px);
+  background: #f8f6f1;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.about-facts-card h3 {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.about-facts-card ul {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+
+.about-facts-card li {
+  color: #47524d;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 @keyframes shimmer {
@@ -216,7 +247,7 @@
 
 .timeline-description {
   font-size: 0.95rem;
-  color: var(--text-secondary);
+  color: #47524d;
   line-height: 1.6;
 }
 
@@ -290,4 +321,3 @@
     right: auto !important;
   }
 }
-

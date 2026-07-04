@@ -1,4 +1,7 @@
 import React from 'react';
+import { navigationItems } from '../content/navigation';
+import { profile } from '../content/profile';
+import { footerSkills } from '../content/skills';
 import './Footer.css';
 
 const Footer = () => {
@@ -7,38 +10,19 @@ const Footer = () => {
   const socialLinks = [
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/anderson-faria-/',
+      url: profile.links.linkedin,
       icon: '💼'
     },
     {
       name: 'GitHub',
-      url: '#',
+      url: profile.links.github,
       icon: '💻'
     },
     {
       name: 'Email',
-      url: 'mailto:junior96175@gmail.com',
+      url: profile.links.email,
       icon: '📧'
     }
-  ];
-
-  const quickLinks = [
-    { name: 'Sobre', href: '#about' },
-    { name: 'Tecnologias', href: '#technologies' },
-    { name: 'Projetos', href: '#projects' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Contato', href: '#contact' }
-  ];
-
-  const skills = [
-    'Cypress',
-    'Selenium',
-    'Postman',
-    'GitLab CI/CD',
-    'Jira',
-    'JavaScript',
-    'Python',
-    'Scrum/Kanban'
   ];
 
   return (
@@ -47,47 +31,48 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-brand">
-              <h3>Anderson Faria</h3>
-              <p className="footer-tagline">QA Engineer | Estratégico | Profissional</p>
-              <p className="footer-description">
-                Especialista em automação de testes com Cypress, Selenium e Playwright + TypeScript,
-                com foco em entregar excelência técnica e resultados de negócio.
-              </p>
+              <h3>{profile.name}</h3>
+              <p className="footer-tagline">{profile.footer.tagline}</p>
+              <p className="footer-description">{profile.footer.description}</p>
             </div>
             
             <div className="social-links">
-              {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  className="social-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={link.name}
-                >
-                  <span className="social-icon">{link.icon}</span>
-                  <span className="social-name">{link.name}</span>
-                </a>
-              ))}
+              {socialLinks.map((link, index) => {
+                const opensNewTab = link.url.startsWith('http');
+
+                return (
+                  <a
+                    key={index}
+                    href={link.url}
+                    className="social-link"
+                    target={opensNewTab ? '_blank' : undefined}
+                    rel={opensNewTab ? 'noopener noreferrer' : undefined}
+                    aria-label={link.name}
+                  >
+                    <span className="social-icon" aria-hidden="true">{link.icon}</span>
+                    <span className="social-name">{link.name}</span>
+                  </a>
+                );
+              })}
             </div>
           </div>
 
           <div className="footer-section">
-            <h4>Links Rápidos</h4>
+            <h4>Navigation</h4>
             <ul className="footer-links">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.href}>{link.name}</a>
+              {navigationItems.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href}>{link.label}</a>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4>Tecnologias</h4>
+            <h4>Focus</h4>
             <div className="footer-skills">
-              {skills.map((skill, index) => (
-                <span key={index} className="footer-skill">
+              {footerSkills.map((skill) => (
+                <span key={skill} className="footer-skill">
                   {skill}
                 </span>
               ))}
@@ -95,19 +80,15 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4>Contato</h4>
+            <h4>Contact</h4>
             <div className="footer-contact">
               <div className="contact-item">
-                <span className="contact-icon">📧</span>
-                <a href="mailto:junior96175@gmail.com">junior96175@gmail.com</a>
+                <span className="contact-icon" aria-hidden="true">📧</span>
+                <a href={profile.links.email}>{profile.links.emailLabel}</a>
               </div>
               <div className="contact-item">
-                <span className="contact-icon">📱</span>
-                <a href="tel:+5535997171705">+55 35 99717-1705</a>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📍</span>
-                <span>Brasil</span>
+                <span className="contact-icon" aria-hidden="true">📍</span>
+                <span>{profile.location}</span>
               </div>
             </div>
           </div>
@@ -116,12 +97,10 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} Anderson Faria. Todos os direitos reservados.
+              © {currentYear} {profile.name}. All rights reserved.
             </p>
             <div className="footer-quote">
-              <p>
-                "Qualidade de software nasce da união entre automação, processo e foco em valor." 
-              </p>
+              <p>"{profile.footer.quote}"</p>
             </div>
           </div>
         </div>
@@ -131,4 +110,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

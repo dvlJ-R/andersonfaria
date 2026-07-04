@@ -1,56 +1,12 @@
-.services {
+.quality-approach {
   padding: 100px 0;
-  background: linear-gradient(180deg, rgba(9, 25, 17, 0.9) 0%, rgba(9, 25, 17, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(9, 25, 17, 0.95) 0%, rgba(9, 25, 17, 0.78) 100%);
 }
 
-.services-header {
-  max-width: 760px;
+.quality-approach-header {
+  max-width: 840px;
   margin: 0 auto 3rem;
   text-align: center;
-}
-
-.services-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-.service-card {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 2rem;
-  border-radius: 24px;
-  box-shadow: var(--shadow);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-}
-
-.service-icon {
-  width: 62px;
-  height: 62px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-  color: var(--bg-primary);
-  font-size: 1.75rem;
-  margin-bottom: 1.5rem;
-}
-
-.service-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-  color: var(--white);
-}
-
-.service-card p {
-  color: var(--text-secondary);
-  line-height: 1.75;
 }
 
 .section-eyebrow {
@@ -59,4 +15,72 @@
   color: var(--color-accent);
   font-size: 0.85rem;
   margin-bottom: 1rem;
+}
+
+.approach-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.approach-card {
+  min-height: 235px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.approach-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 209, 123, 0.42);
+}
+
+.approach-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.16);
+  color: var(--color-accent);
+  border: 1px solid rgba(245, 209, 123, 0.36);
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+}
+
+.approach-card h3 {
+  font-size: 1.08rem;
+  margin-bottom: 0.85rem;
+  color: var(--white);
+  line-height: 1.35;
+}
+
+.approach-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+  .approach-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .quality-approach {
+    padding: 72px 0;
+  }
+
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-card {
+    min-height: auto;
+  }
 }

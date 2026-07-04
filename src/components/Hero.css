@@ -115,11 +115,12 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .hero-highlights {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -127,10 +128,11 @@
 .highlight-card {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 18px;
-  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
   color: var(--color-primary);
   font-weight: 600;
+  text-align: center;
 }
 
 .hero-panel {
@@ -258,15 +260,11 @@
 
   .hero-actions {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
 
-  .hero-stats {
-    gap: 2rem;
-  }
-
-  .stat-number {
-    font-size: 2rem;
+  .hero-actions .btn {
+    text-align: center;
   }
 }
 
@@ -284,4 +282,3 @@
     gap: 1rem;
   }
 }
-

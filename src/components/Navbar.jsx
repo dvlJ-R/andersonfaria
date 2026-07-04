@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { navigationActions, navigationItems } from '../content/navigation';
+import { profile } from '../content/profile';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -36,45 +38,54 @@ const Navbar = () => {
     };
   }, []);
 
-  const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'Sobre' },
-    { href: '#technologies', label: 'Tecnologias' },
-    { href: '#insights', label: 'Insights' },
-    { href: '#projects', label: 'Projetos' },
-    { href: '#blog', label: 'Blog' },
-    { href: '#contact', label: 'Contato' }
-  ];
-
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="nav-content">
           <div className="nav-brand">
-            <a href="#home">Anderson Faria</a>
+            <a href="#home">{profile.name}</a>
           </div>
 
-          <div className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-            {navItems.map((item, index) => {
+          <div
+            id="primary-navigation"
+            className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}
+          >
+            {navigationItems.map((item) => {
               const sectionId = item.href.replace('#', '');
               return (
                 <a
-                  key={index}
+                  key={item.href}
                   href={item.href}
                   className={`nav-link ${activeSection === sectionId ? 'active' : ''}`}
-                  aria-current={activeSection === sectionId ? 'page' : undefined}
+                  aria-current={activeSection === sectionId ? 'location' : undefined}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
                 </a>
               );
             })}
+
+            <div className="nav-actions">
+              {navigationActions.map((action) => (
+                <a
+                  key={action.href}
+                  href={action.href}
+                  className="nav-external-link"
+                  target={action.external ? '_blank' : undefined}
+                  rel={action.external ? 'noopener noreferrer' : undefined}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {action.label}
+                </a>
+              ))}
+            </div>
           </div>
 
           <button
             className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label={isMobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+            aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-controls="primary-navigation"
             aria-expanded={isMobileMenuOpen}
           >
             <span></span>
@@ -88,4 +99,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
